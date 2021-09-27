@@ -8,7 +8,6 @@
                             <span><i class="fas fa-arrow-left mr-3 text-capitalize"></i>categories</span>
                         </a>
                         <div class="pull-right">
-                            @if (auth()->user()->hasTeamPermission($curteam, request()->segment(1).':create'))
                             @if (!$form && !$modal)
                             <button class="btn btn-danger btn-sm" wire:click="toggleForm(false)"><i
                                     class="fas fa-times"></i> Cancel</button>
@@ -17,7 +16,6 @@
                                 wire:click="{{$modal ? 'showModal' : 'toggleForm(true)'}}"><i class="fas fa-plus"></i>
                                 Add
                                 New</button>
-                            @endif
                             @endif
                         </div>
                     </h4>
