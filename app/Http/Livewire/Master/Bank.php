@@ -53,19 +53,18 @@ class Bank extends Component
     public function update()
     {
         $this->_validate();
-        if ($this->bank_logo_path) {
-            $bank_logo = $this->bank_logo_path->store('upload', 'public');
-            $data = ['bank_logo' => $bank_logo];
-            if (Storage::exists('public/' . $this->bank_logo_path)) {
-                Storage::delete('public/' . $this->bank_logo_path);
-            }
-        }
-
         $data = [
             'bank_name'  => $this->bank_name,
             'bank_acount_name'  => $this->bank_acount_name,
             'bank_acount_number'  => $this->bank_acount_number,
         ];
+        if ($this->bank_logo_path) {
+            $bank_logo = $this->bank_logo_path->store('upload', 'public');
+            $data = ['bank_logo' => $bank_logo];
+            if (Storage::exists('public/' . $this->bank_logo)) {
+                Storage::delete('public/' . $this->bank_logo);
+            }
+        }
         $row = ModelsBank::find($this->tbl_banks_id);
 
         $row->update($data);
