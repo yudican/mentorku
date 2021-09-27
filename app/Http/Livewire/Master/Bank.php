@@ -125,6 +125,7 @@ class Bank extends Component
 
     public function showModal()
     {
+        $this->_reset();
         $this->emit('showModal');
     }
 
@@ -137,6 +138,7 @@ class Bank extends Component
         $this->bank_acount_name = null;
         $this->bank_acount_number = null;
         $this->bank_logo = null;
+        $this->bank_logo_path = null;
         $this->form = false;
         $this->form_active = false;
         $this->update_mode = false;
