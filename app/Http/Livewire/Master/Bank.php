@@ -56,8 +56,8 @@ class Bank extends Component
         if ($this->bank_logo_path) {
             $bank_logo = $this->bank_logo_path->store('upload', 'public');
             $data = ['bank_logo' => $bank_logo];
-            if (Storage::exists('public/' . $this->bank_logo)) {
-                Storage::delete('public/' . $this->bank_logo);
+            if (Storage::exists('public/' . $this->bank_logo_path)) {
+                Storage::delete('public/' . $this->bank_logo_path);
             }
         }
 
