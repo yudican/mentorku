@@ -1,25 +1,65 @@
 <div class="page-inner">
+    @push('styles')
+    <style>
+        .search {
+            border: 1px solid #ebedf2;
+            border-left: 1px solid #fff;
+        }
+
+        .search2 {
+            border: 1px solid #ebedf2;
+            border-right: 1px solid #fff;
+        }
+
+        .btn-outline-secondary:hover {
+            color: #000;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid #ebedf2;
+            border-left: 1px solid #fff;
+        }
+
+        .show>.btn-outline-secondary.dropdown-toggle {
+            color: #6c757d;
+            background-color: #fff;
+            border: 1px solid #ebedf2;
+            border-right: 1px solid #fff;
+        }
+
+        .form-control:focus {
+            font-size: 14px;
+            border: 1px solid #ebedf2;
+            border-right: 1px solid #fff;
+            border-left: 1px solid #fff;
+            padding: .6rem 1rem;
+            height: inherit !important;
+        }
+    </style>
+    @endpush
     <div class="card  shadow-none">
         <div class="card-body">
-            <x-text-field type="text" name="category_name" placeholder="Cari Mentor" />
-            <div class="text-center">
-                <h3 style="font-size: 14px;">Functional Area</h3>
-                <div class="row text-center">
-                    <div class="col-3 mx-auto">
-                        <strong>
-                            <h1 style="font-size: 16px;font-weight:bold;">Functional Area</h1>
-                        </strong>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend {{$show ? 'show' : ''}}">
+                    <button class="btn btn-outline-secondary search2" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" wire:click="toggle">Category</button>
+                    <div class="dropdown-menu" wire:ignore.self>
+                        @foreach ($categories as $category)
+                        <a class="dropdown-item"><strong>{{$category->category_name}}</strong></a>
+                        @foreach ($category->subCategories as $key => $item)
+                        <a class="dropdown-item ml-2"><input type="checkbox" wire:model="selected.{{$item->id}}"
+                                value="{{$item->id}}">&nbsp;
+                            {{$item->subcategory_name}}</a>
+                        @endforeach
+                        @endforeach
+
+
                     </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <h3 style="font-size: 14px;">Functional Area</h3>
-                <div class="row text-center">
-                    <div class="col-3 mx-auto">
-                        <strong>
-                            <h1 style="font-size: 16px;font-weight:bold;">Functional Area</h1>
-                        </strong>
-                    </div>
+                <input type="text" wire:model="query" class="form-control" aria-label="Text input with dropdown button"
+                    wire:click="toggle">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary search" wire:click="filter"><i
+                            class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>

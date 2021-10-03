@@ -78,5 +78,5 @@ Route::group(['middleware' => ['auth:sanctum', 'verified', 'user.authorization']
 });
 
 Route::get('/', HomeUser::class)->name('home-user');
-Route::get('/mentor', ClientMentor::class)->name('mentor');
+Route::get('/mentor/{search?}', ClientMentor::class)->name('mentor');
 Route::get('/mentor/{mentor_id}', MentorDetail::class)->name('mentor.detail');

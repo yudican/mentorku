@@ -13,6 +13,7 @@ class MentorDetail extends Component
     public $schedule_topic;
     public $schedule_date;
     public $schedule_duration;
+
     public function mount($mentor_id)
     {
         $this->mentor_id = $mentor_id;

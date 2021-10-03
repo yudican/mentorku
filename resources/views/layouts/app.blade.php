@@ -47,7 +47,7 @@
     <div class="wrapper">
         <div class="main-header">
             <!-- Logo Header -->
-            <div class="logo-header" data-background-color="blue">
+            <div class="logo-header" data-background-color="red">
 
                 <a href="{{route('dashboard')}}" class="logo">
                     <img src="{{asset('assets/img/logo.png')}}" style="height: 40px" alt="navbar brand"
@@ -69,7 +69,7 @@
             <!-- End Logo Header -->
 
             <!-- Navbar Header -->
-            <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+            <nav class="navbar navbar-header navbar-expand-lg" data-background-color="red">
 
                 <div class="container-fluid">
                     {{-- <div class="collapse" id="search-nav">
