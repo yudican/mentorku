@@ -12,15 +12,18 @@ class Mentor extends Component
     public $selected = [];
     public $mentors = [];
     public $query;
+    public $show = false;
 
     protected $listeners = ['setSelected'];
 
     public function mount($search = null)
     {
-        $data = json_decode(base64_decode($search), true);
+        if ($search) {
+            $data = json_decode(base64_decode($search), true);
 
-        $this->selected = $data['data'];
-        $this->query = $data['query'];
+            $this->selected = $data['data'];
+            $this->query = $data['query'];
+        }
     }
     public function render()
     {
@@ -50,5 +53,13 @@ class Mentor extends Component
     public function setSelected($selected)
     {
         $this->selected = $selected;
+    }
+
+    public function filter()
+    {
+        $search = $this->query;
+        $this->mentors = ModelsMentor::whereHas('user', function ($query) use ($search) {
+            return $query->where('name', 'like', '%' . $search . '%');
+        })->get();
     }
 }

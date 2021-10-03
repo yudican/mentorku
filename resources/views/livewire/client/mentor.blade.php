@@ -1,4 +1,51 @@
 <div class="page-inner">
+    @push('styles')
+    <style>
+        .search {
+            border: 1px solid #ebedf2;
+            border-left: 1px solid #fff;
+        }
+
+        .search2 {
+            border: 1px solid #ebedf2;
+            border-right: 1px solid #fff;
+        }
+
+        .btn-outline-secondary:hover {
+            color: #000;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid #ebedf2;
+            border-left: 1px solid #fff;
+        }
+
+        .show>.btn-outline-secondary.dropdown-toggle {
+            color: #6c757d;
+            background-color: #fff;
+            border: 1px solid #ebedf2;
+            border-right: 1px solid #fff;
+        }
+
+        .form-control:focus {
+            font-size: 14px;
+            border: 1px solid #ebedf2;
+            border-right: 1px solid #fff;
+            padding: .6rem 1rem;
+            height: inherit !important;
+        }
+    </style>
+    @endpush
+    <div class="card  shadow-none">
+        <div class="card-body">
+            <div class="input-group mb-3">
+                <input type="text" wire:model="query" class="form-control" aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary search" wire:click="filter"><i
+                            class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-4">
             <div class="card shadow-none">
