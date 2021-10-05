@@ -4061,10 +4061,10 @@ label.error {
     background: #1a2035 !important;
     color: #ffffff !important; }
 
-.btn-primary {
+.btn-danger {
   background: #1572E8 !important;
   border-color: #1572E8 !important; }
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:disabled {
+  .btn-danger:hover, .btn-danger:focus, .btn-danger:disabled {
     background: #1572E8 !important;
     border-color: #1572E8 !important; }
 
@@ -4131,7 +4131,7 @@ label.error {
   .btn-border.btn-black {
     color: #1a2035 !important;
     border: 1px solid #1a2035 !important; }
-  .btn-border.btn-primary {
+  .btn-border.btn-danger {
     color: #1572E8 !important;
     border: 1px solid #1572E8 !important; }
   .btn-border.btn-secondary {
@@ -4169,9 +4169,9 @@ label.error {
     color: #1a2035 !important; }
     .btn-link.btn-black:hover {
       color: #1a2035 !important; }
-  .btn-link.btn-primary {
+  .btn-link.btn-danger {
     color: #1572E8 !important; }
-    .btn-link.btn-primary:hover {
+    .btn-link.btn-danger:hover {
       color: #1572E8 !important; }
   .btn-link.btn-secondary {
     color: #6861CE !important; }
@@ -5649,7 +5649,7 @@ label.error {
   top: calc(50% - 1rem/2);
   left: calc(50% - 1rem/2); }
 
-.btn-black.is-loading:after, .card-black.is-loading:after, .btn-primary.is-loading:after, .card-primary.is-loading:after, .btn-secondary.is-loading:after, .card-secondary.is-loading:after, .btn-info.is-loading:after, .card-info.is-loading:after, .btn-success.is-loading:after, .card-success.is-loading:after, .btn-warning.is-loading:after, .card-warning.is-loading:after, .btn-danger.is-loading:after, .card-danger.is-loading:after, .loader-black,
+.btn-black.is-loading:after, .card-black.is-loading:after, .btn-danger.is-loading:after, .card-primary.is-loading:after, .btn-secondary.is-loading:after, .card-secondary.is-loading:after, .btn-info.is-loading:after, .card-info.is-loading:after, .btn-success.is-loading:after, .card-success.is-loading:after, .btn-warning.is-loading:after, .card-warning.is-loading:after, .btn-danger.is-loading:after, .card-danger.is-loading:after, .loader-black,
 .is-loading-black:after, .loader-primary,
 .is-loading-primary:after, .loader-secondary,
 .is-loading-secondary:after, .loader-info,
@@ -5659,7 +5659,7 @@ label.error {
 .is-loading-danger:after {
   border-bottom-color: transparent !important; }
 
-.btn-black.is-loading:after, .card-black.is-loading:after, .btn-primary.is-loading:after, .card-primary.is-loading:after, .btn-secondary.is-loading:after, .card-secondary.is-loading:after, .btn-info.is-loading:after, .card-info.is-loading:after, .btn-success.is-loading:after, .card-success.is-loading:after, .btn-warning.is-loading:after, .card-warning.is-loading:after, .btn-danger.is-loading:after, .card-danger.is-loading:after {
+.btn-black.is-loading:after, .card-black.is-loading:after, .btn-danger.is-loading:after, .card-primary.is-loading:after, .btn-secondary.is-loading:after, .card-secondary.is-loading:after, .btn-info.is-loading:after, .card-info.is-loading:after, .btn-success.is-loading:after, .card-success.is-loading:after, .btn-warning.is-loading:after, .card-warning.is-loading:after, .btn-danger.is-loading:after, .card-danger.is-loading:after {
   border-color: #fff; }
 
 .loader-black,

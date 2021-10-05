@@ -38,6 +38,11 @@
             box-sizing: border-box;
             padding: 7px;
         }
+
+        .sidebar.sidebar-style-2 .nav.nav-primary>.nav-item.active>a {
+            background: #dc3545 !important;
+            box-shadow: 4px 4px 10px 0 rgb(0 0 0 / 10%), 4px 4px 15px -5px rgb(21 114 232 / 40%);
+        }
     </style>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

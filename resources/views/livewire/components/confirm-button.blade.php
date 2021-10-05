@@ -1,10 +1,10 @@
 <div>
   @if (Auth::user()->role->role_type == 'member')
   @if (in_array($status,[0,3]))
-  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" wire:click="getId('{{ $id }}')"
+  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" wire:click="getId('{{ $id }}')"
     id="btn-upload-{{ $id }}"><i class="fas fa-upload"></i></button>
   @else
-  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" id="btn-upload-{{ $id }}" disabled><i
+  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" id="btn-upload-{{ $id }}" disabled><i
       class="fas fa-upload"></i></button>
   @endif
   @else

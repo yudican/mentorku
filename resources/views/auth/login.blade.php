@@ -34,7 +34,7 @@
                         <label class="custom-control-label m-0" for="rememberme">Remember Me</label>
                     </div>
                     <button type="submit"
-                        class="btn btn-secondary col-md-5 float-right mt-3 mt-sm-0 fw-bold">Masuk</button>
+                        class="btn btn-danger col-md-5 float-right mt-3 mt-sm-0 fw-bold">Masuk</button>
                 </div>
             </div>
             <div class="login-account text-center mt-3">

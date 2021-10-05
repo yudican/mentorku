@@ -36,7 +36,7 @@
                         name="user_photo_path" label="Profile" />
 
                     <div class="form-group">
-                        <button type="button" wire:click="updateProfile" class="btn btn-primary btn-sm">Update</button>
+                        <button type="button" wire:click="updateProfile" class="btn btn-danger btn-sm">Update</button>
                     </div>
                 </div>
             </div>

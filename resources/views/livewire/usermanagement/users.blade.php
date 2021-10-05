@@ -12,7 +12,7 @@
                             <button class="btn btn-danger btn-sm" wire:click="toggleForm(false)"><i
                                     class="fas fa-times"></i> Cancel</button>
                             @else
-                            <button class="btn btn-primary btn-sm"
+                            <button class="btn btn-danger btn-sm"
                                 wire:click="{{$modal ? 'showModal' : 'toggleForm(true)'}}"><i class="fas fa-plus"></i>
                                 Add
                                 New</button>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" wire:click={{$update_mode ? 'update' : 'store'}}
-                            class="btn btn-primary btn-sm"><i class="fa fa-check pr-2"></i>Simpan</button>
+                            class="btn btn-danger btn-sm"><i class="fa fa-check pr-2"></i>Simpan</button>
                         <button class="btn btn-danger btn-sm" wire:click='_reset'><i
                                 class="fa fa-times pr-2"></i>Batal</a>
                     </div>
@@ -99,7 +99,7 @@
                     <div class="modal-footer">
                         <button type="submit" wire:click='delete' class="btn btn-danger btn-sm"><i
                                 class="fa fa-check pr-2"></i>Ya, Hapus</button>
-                        <button class="btn btn-primary btn-sm" wire:click='_reset'><i
+                        <button class="btn btn-danger btn-sm" wire:click='_reset'><i
                                 class="fa fa-times pr-2"></i>Batal</a>
                     </div>
                 </div>

@@ -56,7 +56,7 @@
               </tbody>
             </table>
           </div>
-          <button wire:click="store" type="button" class="btn btn-primary btn-sm pull-right" id="btn-add">
+          <button wire:click="store" type="button" class="btn btn-danger btn-sm pull-right" id="btn-add">
             <i class="fas fa-check mr-2"></i>
             <span>Simpan</span>
           </button>

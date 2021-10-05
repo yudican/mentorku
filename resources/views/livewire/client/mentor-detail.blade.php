@@ -30,7 +30,7 @@
 
             @if (Auth::check())
             <div class="form-group">
-                <button type="button" wire:click="makeSchedule" class="btn btn-primary btn-sm">Make Schedule</button>
+                <button type="button" wire:click="makeSchedule" class="btn btn-danger btn-sm">Make Schedule</button>
             </div>
             @else
             <div class="form-group">

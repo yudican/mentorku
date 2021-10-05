@@ -19,7 +19,7 @@
                     @csrf
 
                     <div>
-                        <button class="btn btn-primary" type="submit" wire:loading.attr="disabled">
+                        <button class="btn btn-danger" type="submit" wire:loading.attr="disabled">
                             {{ __('Resend Verification Email') }}
                         </button>
                     </div>

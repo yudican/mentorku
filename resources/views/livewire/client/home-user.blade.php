@@ -110,7 +110,7 @@
             </div>
             <div class=" text-center">
                 <a href="{{route('mentor')}}">
-                    <button class="btn btn-primary btn-border btn-round">See All</button></a>
+                    <button class="btn btn-danger btn-border btn-round">See All</button></a>
             </div>
         </div>
     </div>
@@ -184,7 +184,7 @@
                     </div>
                     <div class="card-footer">
                         <a href="{{route('subscription', ['plan_id' => $plan->id])}}">
-                            <button class="btn btn-secondary btn-block"><b>Subscribe</b></button>
+                            <button class="btn btn-danger btn-block"><b>Subscribe</b></button>
                         </a>
                     </div>
                 </div>

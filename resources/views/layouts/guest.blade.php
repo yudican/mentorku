@@ -35,6 +35,14 @@
 
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+
+    <style>
+        .bg-secondary-gradient {
+            background: #dc3545 !important;
+            background: -webkit-linear-gradient(legacy-direction(-45deg), #dc3545, #dc3545) !important;
+            background: linear-gradient(-45deg, #dc3545, #dc3545) !important;
+        }
+    </style>
 </head>
 
 <body class="login">

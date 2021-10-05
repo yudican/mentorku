@@ -93,7 +93,7 @@
 
 
                             <div class=" form-group">
-                                <button class="btn btn-primary btn-sm pull-right" wire:click="generate">save</button>
+                                <button class="btn btn-danger btn-sm pull-right" wire:click="generate">save</button>
                             </div>
                         </div>
                     </div>

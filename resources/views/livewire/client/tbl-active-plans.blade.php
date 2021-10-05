@@ -24,7 +24,7 @@
                     <x-text-field type="text" name="user_id" label="user id" />
 
                     <div class="form-group">
-                        <button class="btn btn-primary pull-right"
+                        <button class="btn btn-danger pull-right"
                             wire:click="{{$update_mode ? 'update' : 'store'}}">Simpan</button>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                     <div class="modal-footer">
                         <button type="submit" wire:click='delete' class="btn btn-danger btn-sm"><i
                                 class="fa fa-check pr-2"></i>Ya, Hapus</button>
-                        <button class="btn btn-primary btn-sm" wire:click='_reset'><i
+                        <button class="btn btn-danger btn-sm" wire:click='_reset'><i
                                 class="fa fa-times pr-2"></i>Batal</a>
                     </div>
                 </div>

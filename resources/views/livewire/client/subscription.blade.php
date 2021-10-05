@@ -108,7 +108,7 @@
                         name="confirm_photo_path" label="Upload Photo" />
 
                     <div class="form-group">
-                        <button type="button" wire:click="confirmPayment" class="btn btn-primary btn-sm">Simpan</button>
+                        <button type="button" wire:click="confirmPayment" class="btn btn-danger btn-sm">Simpan</button>
                     </div>
                 </div>
                 @endif

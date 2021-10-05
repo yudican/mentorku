@@ -11,7 +11,7 @@
             <div class="login-form">
                 <x-text-field type="email" name="email" label="Email" />
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Lupa kata
+                    <button type="submit" class="btn btn-danger">Lupa kata
                         sandi</button>
                 </div>
                 <div class="form-group login-account text-left mt-3">

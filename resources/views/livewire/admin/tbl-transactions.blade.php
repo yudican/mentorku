@@ -75,11 +75,11 @@
                     </div>
                     <div class="modal-footer">
                         @if (Auth::user()->role->role_type == 'member')
-                        <button type="button" wire:click='confirmPayment' class="btn btn-primary btn-sm"><i
+                        <button type="button" wire:click='confirmPayment' class="btn btn-danger btn-sm"><i
                                 class="fa fa-check pr-2"></i>Simpan</button>
                         @else
                         @if ($status == 1)
-                        <button type="button" wire:click='store' class="btn btn-primary btn-sm"><i
+                        <button type="button" wire:click='store' class="btn btn-danger btn-sm"><i
                                 class="fa fa-check pr-2"></i>Simpan</button>
                         @endif
                         @endif
@@ -108,7 +108,7 @@
                     <div class="modal-footer">
                         <button type="submit" wire:click='delete' class="btn btn-danger btn-sm"><i
                                 class="fa fa-check pr-2"></i>Ya, Hapus</button>
-                        <button class="btn btn-primary btn-sm" wire:click='_reset'><i
+                        <button class="btn btn-danger btn-sm" wire:click='_reset'><i
                                 class="fa fa-times pr-2"></i>Batal</a>
                     </div>
                 </div>

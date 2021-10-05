@@ -162,7 +162,7 @@
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" id="notifDropdown" title="Login" href="{{ route('login') }}">
-                    <button class=" btn btn-primary btn-sm px-4 border-r-2">Login</button>
+                    <button class=" btn btn-danger btn-sm px-4 border-r-2">Login</button>
                   </a>
                 </li>
                 @endif
