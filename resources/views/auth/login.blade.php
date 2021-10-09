@@ -16,11 +16,11 @@
                 </div>
                 <div class="form-group">
                     <label for="password" class="placeholder"><b>Password</b></label>
-                    @if (Route::has('password.request'))
+                    {{-- @if (Route::has('password.request'))
                     <a class="link float-right" href="{{ route('password.request') }}">
-                        {{ __('Lupa kata sandi?') }}
+                    {{ __('Lupa kata sandi?') }}
                     </a>
-                    @endif
+                    @endif --}}
                     <div class="position-relative">
                         <input id="password" name="password" type="password" class="form-control" required>
                         {{-- <div class="show-password">

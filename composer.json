@@ -7,6 +7,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "asantibanez/livewire-select": "^2.1",
+        "consoletvs/charts": "7.*",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -14,6 +15,7 @@
         "laravel/jetstream": "^2.3",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
+        "laraveldaily/laravel-charts": "^0.1.27",
         "livewire/livewire": "^2.0",
         "mediconesystems/livewire-datatables": "^0.5.1"
     },

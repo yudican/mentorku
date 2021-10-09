@@ -54,7 +54,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified', 'user.authorization']
     Route::get('/menu', Menu::class)->name('menu');
 
     // App Route
-    Route::get('/dashboard', Dashboard::class)->name('dashboard');
+    Route::get('/dashboard/{period?}', Dashboard::class)->name('dashboard');
 
     // Master data
     Route::get('/category', Category::class)->name('category');
