@@ -7,6 +7,7 @@
                         <a href="{{route('dashboard')}}">
                             <span><i class="fas fa-arrow-left mr-3 text-capitalize"></i>schedules</span>
                         </a>
+                        @if (auth()->user()->role->role_type != 'member')
                         <div class="pull-right">
                             @if (!$form && !$modal)
                             <button class="btn btn-danger btn-sm" wire:click="toggleForm(false)"><i
@@ -18,6 +19,7 @@
                                 New</button>
                             @endif
                         </div>
+                        @endif
                     </h4>
                 </div>
             </div>
