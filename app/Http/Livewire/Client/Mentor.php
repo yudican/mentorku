@@ -21,8 +21,10 @@ class Mentor extends Component
         if ($search) {
             $data = json_decode(base64_decode($search), true);
 
-            $this->selected = $data['data'];
-            $this->query = $data['query'];
+            if (isset($data)) {
+                $this->selected = $data['data'];
+                $this->query = $data['query'];
+            }
         }
     }
     public function render()

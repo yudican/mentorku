@@ -133,6 +133,14 @@
                           <a class="dropdown-item" href="{{route('transaction')}}">My Transaction</a>
                           <a class="dropdown-item" href="{{route('schedule')}}">My Schedule</a>
                           <a class="dropdown-item" href="{{route('active-plan')}}">My Plan</a>
+                          <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" title="Logout" href="{{ route('logout') }}"
+                              onclick="event.preventDefault();
+                                                                                                    this.closest('form').submit();">
+                              Logout
+                            </a>
+                          </form>
                         </li>
                       </div>
                       <div class="scroll-element scroll-x" style="">
