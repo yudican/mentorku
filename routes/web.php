@@ -37,7 +37,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return redirect('home-user');
-})->name('home.user');
+});
 
 
 Route::post('login', [AuthController::class, 'login'])->name('admin.login');
