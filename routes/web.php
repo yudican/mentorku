@@ -10,6 +10,7 @@ use App\Http\Livewire\Client\HomeUser;
 use App\Http\Livewire\Client\Mentor as ClientMentor;
 use App\Http\Livewire\Client\MentorDetail;
 use App\Http\Livewire\Client\MentorProfile;
+use App\Http\Livewire\Client\ProfileUser;
 use App\Http\Livewire\Client\Subscription;
 use App\Http\Livewire\CrudGenerator;
 use App\Http\Livewire\Dashboard;
@@ -75,6 +76,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified', 'user.authorization']
     Route::get('/active-plan', ActivePlan::class)->name('active-plan');
     Route::get('/schedule', Schedule::class)->name('schedule');
     Route::get('/profile', MentorProfile::class)->name('mentor.profile');
+    Route::get('/user-profile', ProfileUser::class)->name('user.profile');
 });
 
 Route::get('/', HomeUser::class)->name('home-user');
