@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Client;
 
+use App\Models\Chat;
 use App\Models\Mentor;
 use App\Models\Schedule;
 use Livewire\Component;
@@ -50,5 +51,11 @@ class MentorDetail extends Component
         ]);
 
         return $this->emit('showAlert', ['msg' => 'Schedule Berhasil Dibuat', 'redirect' => true, 'path' => '/schedule']);
+    }
+
+    public function startChat($user_id)
+    {
+        $chat = Chat::updateOrCreate(['user_id' => auth()->user()->id, 'mentor_id' => $user_id]);
+        return redirect(route('chat.detail', ['chat_id' => $chat->id]));
     }
 }

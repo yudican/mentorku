@@ -13,6 +13,10 @@
                             <strong class="d-block text-gray-dark text-decoration-none">{{$mentor->user->name}}</strong>
                             {{$mentor->mentor_keahlian}}
                         </p>
+                        @if (Auth::check())
+                        <button type="button" wire:click="startChat('{{$mentor->user->id}}')"
+                            class="btn btn-danger btn-sm">Diskusi</button>
+                        @endif
                     </div>
                     <p class="pt-2">{{$mentor->mentor_description}}</p>
                 </div>

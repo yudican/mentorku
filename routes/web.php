@@ -5,6 +5,8 @@ use App\Http\Livewire\Admin\Mentor;
 use App\Http\Livewire\Admin\Schedule;
 use App\Http\Livewire\Admin\Transaction;
 use App\Http\Livewire\Auth\Register;
+use App\Http\Livewire\Chat\Chat;
+use App\Http\Livewire\Chat\ChatDetail;
 use App\Http\Livewire\Client\ActivePlan;
 use App\Http\Livewire\Client\HomeUser;
 use App\Http\Livewire\Client\Mentor as ClientMentor;
@@ -82,3 +84,6 @@ Route::group(['middleware' => ['auth:sanctum', 'verified', 'user.authorization']
 Route::get('/', HomeUser::class)->name('home-user');
 Route::get('/mentor/{search?}', ClientMentor::class)->name('mentor');
 Route::get('/mentor/detail/{mentor_id}', MentorDetail::class)->name('mentor.detail');
+
+Route::get('/chat', Chat::class)->name('chat');
+Route::get('/chat/detail/{chat_id}', ChatDetail::class)->name('chat.detail');
